@@ -19,6 +19,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class Employee {
+	
+//	hibernate uses proxies to create proxies to create proxy objects.
+//	So, we shd always create default constructor wheneve we create paramaterised constructor
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
