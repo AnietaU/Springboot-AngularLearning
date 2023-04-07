@@ -36,8 +36,5 @@ export class UpdateEmployeeComponent implements OnInit {
   goToEmployeeList(){
     this._router.navigate(['/employees']);
   }
-
-
-
-
+  
 }
