@@ -6,6 +6,8 @@
             <th>Designation</th>
             <th>Email</th>
             <th>Update</th>
+            <th>Delete</th>
+            <th>View</th>
         </tr>
     </thead>
     <tbody>
@@ -16,6 +18,13 @@
             <td>
                 <button (click)="updateEmployee(employee.id)" class="btn btn-info">Update</button>
             </td>
+            <td>
+                <button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+            </td>
+            <td>
+                <button (click)="viewEmployeeDetails(employee.id)" class="btn btn-primary">View</button>
+            </td>
+
         </tr>
     </tbody>
 </table>
